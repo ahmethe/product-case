@@ -1,0 +1,54 @@
+.swiper-scrollbar {
+  width: calc(100% - 110px) !important;   
+  margin-left: 40px !important;          
+  margin-top: 24px !important;
+  height: 12px !important;
+  background: #cac3c3 !important;
+  border-radius: 10px !important;
+}
+
+.swiper-scrollbar-drag {
+  background: #9d9b9b !important;
+  border-radius: 10px !important;
+  height: 12px !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #000000;
+  transform: translateY(-200%);
+}
+
+.swiper-button-prev {
+  left: 8px; 
+}
+
+.swiper-button-next {
+  right: 8px; 
+}
+
+.swiper {
+  padding: 0 48px 50px;
+  box-sizing: border-box;
+}
+
+.swiper::before,
+.swiper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 40px;
+  width: 60px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.swiper::before {
+  left: 0;
+  background: linear-gradient(to right, #fafafa 40%, transparent);
+}
+
+.swiper::after {
+  right: 0;
+  background: linear-gradient(to left, #fafafa 40%, transparent);
+}
