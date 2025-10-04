@@ -1,0 +1,60 @@
+body { 
+  margin: 0; 
+  background: #fafafa;
+}
+
+.app { 
+  max-width: 1280px; 
+  margin: 40px auto; 
+  padding: 0 16px; 
+}
+
+.title { 
+  font-family: "AvenirBook";
+  text-align: center;
+  font-weight: 400; 
+  font-size: 45px;
+  margin-bottom: 24px; 
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.filter-item {
+  display: flex;
+  flex-direction: column;
+  font-family: "AvenirBook";
+  font-size: 14px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.filter-item input {
+  margin-top: 4px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 120px;
+  font-family: "AvenirBook";
+  text-align: center;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #222;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-family: "AvenirBook";
+}
