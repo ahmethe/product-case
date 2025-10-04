@@ -16,7 +16,7 @@ export default async function handler(req, res) {
         .json({ message: "Maximum Price should be greater than Minimum Price." });
     }
 
-    const filePath = path.join(process.cwd(), "data", "products.json");
+    const filePath = path.join(process.cwd(), "api", "data", "products.json");
     const json = fs.readFileSync(filePath, "utf8");
     const products = JSON.parse(json);
 
@@ -24,7 +24,8 @@ export default async function handler(req, res) {
       return res.status(500).json({ message: "Failed to fetch products." });
     }
 
-    const goldPrice = await getGoldPricePerGram(process.env.GOLD_API_KEY);
+    const goldPrice =
+      (await getGoldPricePerGram(process.env.GOLD_API_KEY)) ?? 100;
 
     const productDtos = products.map((p) => {
       const adjustedPopularity = Math.round(p.popularityScore * 5 * 10) / 10;
