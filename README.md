@@ -25,7 +25,7 @@ Users can filter products by **price** and **popularity**, and prices are dynami
 
 ---
 
-## 🧠 Project Structure
+## Project Structure
 ```text
 product-case/
  ┣ api/
