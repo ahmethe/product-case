@@ -47,6 +47,7 @@ product-case/
 ---
 
 ## Run Locally
+```bash
 # Clone the repository
 git clone https://github.com/ahmethe/product-case
 
@@ -60,3 +61,4 @@ npm run start:backend
 
 # Start frontend
 npm run dev
+```
