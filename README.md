@@ -26,22 +26,23 @@ Users can filter products by **price** and **popularity**, and prices are dynami
 ---
 
 ## 🧠 Project Structure
+```text
 product-case/
-┣ api/ # Backend route (Node.js)
-┃ ┣ data/products.json
-┃ ┗ products.js
-┣ product-frontend/ # React + Vite frontend
-┣ package.json
-┗ README.md
-
+ ┣ api/
+ ┃ ┣ data/products.json
+ ┃ ┗ products.js
+ ┣ product-frontend/
+ ┣ package.json
+ ┗ README.md
+```
 ---
 
 ## Live Demo
 **Frontend + API (HTTPS):**  
-[https://product-case.vercel.app](https://product-case.vercel.app)
+[https://product-case-one.vercel.app](https://product-case-one.vercel.app)
 
 **Backend Endpoint:**  
-[https://product-case.vercel.app/api/products](https://product-case.vercel.app/api/products)
+[https://product-case-one.vercel.app/api/products](https://product-case-one.vercel.app/api/products)
 
 ---
 
